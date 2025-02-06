@@ -17,8 +17,8 @@ const Map = () => {
     return (
         <div className="mt-10 mb-10">
             <div className='flex items-center flex-col justify-center'>
-                <h2 className="mb-2 text-gray-900 text-4xl font-semibold">Countries Impacted</h2>
-                <p className='mb-4 text-lg text-gray-700'>Over the past decade, our projects and activities have positively impacted numerous nations.</p>
+                <h2 className="mb-2 text-gray-900 text-2xl md:text-4xl font-semibold">Countries Impacted</h2>
+                <p className='mb-4 text-base md:text-lg text-gray-700'>Over the past decade, our projects and activities have positively impacted numerous nations.</p>
             </div>
             <div className="relative">
                 <Image
