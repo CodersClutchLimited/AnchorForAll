@@ -23,7 +23,7 @@ const Focused2 = () => {
 
         <div className="flex flex-col">
           <Image
-          src="https://newafricafoundation.org/wp-content/uploads/2023/10/Screenshot-2023-10-04-at-11.35.04%E2%80%AFAM.png"
+          src="https://img.freepik.com/free-photo/volunteer-collecting-donation-box-from-another-volunteer_23-2149230540.jpg?ga=GA1.1.1411535131.1738618804&semt=ais_hybrid"
           alt="Description"
           width={300}
           height={300}

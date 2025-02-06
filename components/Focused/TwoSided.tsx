@@ -7,7 +7,7 @@ const Twosided = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="flex flex-col">
           <Image
-          src="https://newafricafoundation.org/wp-content/uploads/2023/10/Hero-Image.png"
+          src="https://img.freepik.com/premium-photo/guy-girl-with-check-boxes-volunteers-masks-with-laptop-boxes-with-humanitarian-aid_1157-46589.jpg?ga=GA1.1.1411535131.1738618804&semt=ais_hybrid"
           alt="Description"
           width={500}
           height={500}
