@@ -19,7 +19,7 @@ const Navbar = () => {
           </Avatar>
         </Link>
         <div className="flex items-center lg:order-2 space-x-1 lg:space-x-2 rtl:space-x-reverse">
-          <Link href="#" className="border-2 border-[#345F80] text-[#345F80] font-medium rounded-lg text-sm px-4 py-2 lg:px-5 lg:py-2.5">Join Us</Link>
+          <Link href="#" className="border-2 border-[#345F80] text-[#345F80] font-medium rounded-lg text-sm px-4 py-2 lg:px-5 lg:py-2.5">Get Aid</Link>
           <Link href="#" className="border-2 border-[#DB2777] text-[#DB2777] font-medium rounded-lg text-sm px-4 py-2 lg:px-5 lg:py-2.5">Donate Now</Link>
           <button
             onClick={handleMenuToggle}
