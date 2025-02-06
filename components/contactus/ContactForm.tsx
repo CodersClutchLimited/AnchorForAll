@@ -3,7 +3,7 @@ import { FaUser, FaEnvelope } from "react-icons/fa";
 
 const ContactForm = () => {
   return (
-    <div className=" mx-auto  px-4">
+    <div className=" container   px-4">
       {/* Google Map */}
       <div className="w-full h-80 mb-8">
         <iframe
