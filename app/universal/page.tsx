@@ -1,9 +1,13 @@
+import BoardBanner from '@/components/About/BoardBanner'
+import TeamCards from '@/components/About/TeamCards'
+
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-      <h1 className=''>HELLO WORLD</h1>
+      <BoardBanner/>
+      <TeamCards/>
     </div>
   )
 }
