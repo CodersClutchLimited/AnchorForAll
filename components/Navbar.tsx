@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
-        <Link href="https://flowbite.com" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Avatar>
             <AvatarImage src="https://anchorforallfoundation.org/wp-content/uploads/2024/07/ANCHOR-LANDSCAPE-2048x819.png" className="h-[80px]" alt="Flowbite Logo" />
           </Avatar>
@@ -35,13 +35,13 @@ const Navbar = () => {
         </div>
         <div id="mega-menu" className={`${menuOpen ? 'block' : 'hidden'} w-full lg:flex lg:w-auto lg:order-1`}>
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:mt-0 rtl:space-x-reverse">
-            <li><Link href="#" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">Home</Link></li>
-            <li><Link href="#" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">About Us</Link></li>
-            <li><Link href="#" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">Focus Areas</Link></li>
-            <li><Link href="#" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">Our Projects</Link></li>
-            <li><Link href="#" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">FAQs</Link></li>
-            <li><Link href="#" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">Gallery</Link></li>
-            <li><Link href="#" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">Contact Us</Link></li>
+            <li><Link href="/" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">Home</Link></li>
+            <li><Link href="/about-us" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">About Us</Link></li>
+            <li><Link href="/focused-area" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">Focus Areas</Link></li>
+            <li><Link href="/our-projects" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">Our Projects</Link></li>
+            <li><Link href="/FAQS" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">FAQs</Link></li>
+            <li><Link href="/Gallery" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">Gallery</Link></li>
+            <li><Link href="/contact-us" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">Contact Us</Link></li>
           </ul>
         </div>
       </div>
