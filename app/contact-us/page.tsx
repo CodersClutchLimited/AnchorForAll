@@ -6,7 +6,7 @@ const page = () => {
   return (
     <div>
       <div className="w-full bg-[#367978] px-[150px] py-[70px]">
-        <p className="text-4xl lg:text-7xl text-white font-bold">Contac us</p>
+        <p className="text-4xl lg:text-7xl text-white font-bold">Contact us</p>
       </div>
       <div className="flex justify-center items-center  bg-gray-100">
         <ContactInfo />

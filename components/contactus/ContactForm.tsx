@@ -3,7 +3,7 @@ import { FaUser, FaEnvelope } from "react-icons/fa";
 
 const ContactForm = () => {
   return (
-    <div className=" container   px-4">
+    <div className=" container mt-[70px]   px-4">
       {/* Google Map */}
       <div className="w-full h-80 mb-8">
         <iframe
@@ -61,7 +61,7 @@ const ContactForm = () => {
         <div className="mt-6 text-center">
           <button
             type="submit"
-            className="bg-green-700 text-white px-6 py-3 rounded-md text-lg font-semibold hover:bg-green-800 transition"
+            className="bg-green-700 text-white px-6 py-3 rounded-xl text-lg font-semibold hover:bg-green-800 transition"
           >
             Send Your Message
           </button>
