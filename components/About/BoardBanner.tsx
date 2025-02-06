@@ -15,7 +15,7 @@ const BoardBanner = () => {
             </div>
 
             {/* Content on top of the image */}
-            <div className="relative z-10 flex flex-col justify-center items-center text-center p-10">
+            <div className="relative  flex flex-col justify-center items-center text-center p-10">
                 <h2 className="uppercase text-2xl md:text-3xl text-[#002866] font-bold mb-5 mt-2">
                     Board of Directors
                 </h2>
