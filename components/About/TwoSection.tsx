@@ -4,9 +4,9 @@ import { FaGooglePlay } from "react-icons/fa";
 
 const TwoSection = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center h-[70vh] max-md:mb-[500px]">
+    <div className="flex mt-[40px] flex-col md:flex-row items-center h-[70vh] max-md:mb-[500px]">
       {/* Left Content - 1/2 Width */}
-      <div className="w-full h-full md:w-1/2 bg-gray-100 p-20 flex items-center justify-center">
+      <div className="w-full h-full md:w-1/2 bg-gray-100 p-20 md:pl-[9.5rem] flex items-center justify-center">
         <div>
           <h3 className="text-lg text-gray-600">
             Want to participate in decision making?

@@ -5,7 +5,7 @@ import React from 'react';
 const TeamCards = () => {
     return (
         <div className="flex justify-center">
-            <div className="mt-10 mb-20 grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-[100px]">
+            <div className="my-[80px] grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-[100px]">
                 {/* Card 1 */}
                 <div className="w-[350px] h-[370px] rounded-2xl relative shadow-md bg-white">
                     <Image

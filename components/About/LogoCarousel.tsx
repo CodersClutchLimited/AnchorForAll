@@ -42,7 +42,7 @@ const LogoCarousel = () => {
       opts={{
         align: "start",
       }}
-      className="w-full m-auto max-w-5xl"
+      className="w-full m-auto max-w-[72rem]"
     >
       <h1 className="text-3xl text-blue-950 font-bold text-center mt-[70px] pb-12">
         OUR NETWORK
