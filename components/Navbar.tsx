@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
+      <div className="flex flex-wrap items-center justify-between max-w-screen-2xl mx-auto p-4">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -74,60 +74,119 @@ const Navbar = () => {
         </div>
         <div
           id="mega-menu"
-          className={`${
-            menuOpen ? "block" : "hidden"
-          } w-full lg:flex lg:w-auto lg:order-1`}
+          className={`${menuOpen ? "block" : "hidden"
+            } w-full lg:flex lg:w-auto lg:order-1`}
         >
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:mt-0 rtl:space-x-reverse">
             <li>
               <Link
                 href="/"
-                className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white"
+                className="text-[.9rem] -mt-[1.6px] text-[#345F80] font-semibold uppercase block py-2 px-3 hover:text-[#DB2777] transition duration-300 dark:text-white"
               >
                 Home
               </Link>
             </li>
-            {/* <li><Link href="/about-us" className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white">About Us</Link></li> */}
             <li>
               <NavigationMenu>
-                <NavigationMenuItem className="mt-[0.2rem]">
-                  <Link href="/about-us" >
-                  <NavigationMenuTrigger >
-                    Getting started
-                  </NavigationMenuTrigger>
+                <NavigationMenuItem className="">
+                  <Link className="hover:text-[#DB2777] transition duration-300" href="/about-us" >
+                    <NavigationMenuTrigger className="text-[.9rem] text-[#345F80] font-semibold uppercase" >
+                      About Us
+                    </NavigationMenuTrigger>
 
                   </Link>
-                  <NavigationMenuContent>
-                    <ul className="grid gap-3 bg-white rounded-xl p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] z-60">
-                      <li className="row-span-3">
-                        <NavigationMenuLink asChild>
-                          <Link
-                            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                            href="/"
-                          >
-                            <FaIcons className="h-6 w-6" />
-                            <div className="mb-2 mt-4 text-lg font-medium">
-                              shadcn/ui
-                            </div>
-                            <p className="text-sm leading-tight text-muted-foreground">
-                              Beautifully designed components built with Radix
-                              UI and Tailwind CSS.
-                            </p>
-                          </Link>
-                        </NavigationMenuLink>
-                      </li>
-                      <ListItem href="/docs" title="Introduction">
-                        Re-usable components built using Radix UI and Tailwind
-                        CSS.
+                  <NavigationMenuContent className="border-t-4 border-[#DB2777]">
+                    <ul className="grid text-gray-700 bg-white rounded-xl p-4 md:w-[200px] lg:w-[200px]  z-60">
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Who we are</span>
                       </ListItem>
-                      <ListItem href="/docs/installation" title="Installation">
-                        How to install dependencies and structure your app.
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Our Board</span>
                       </ListItem>
-                      <ListItem
-                        href="/docs/primitives/typography"
-                        title="Typography"
-                      >
-                        Styles for headings, paragraphs, lists...etc
+
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Volunteers</span>
+                      </ListItem>
+
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">AFAF Network</span>
+                      </ListItem>
+
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>{" "}
+              </NavigationMenu>
+            </li>
+            <li>
+              <NavigationMenu>
+                <NavigationMenuItem className="">
+                  <Link className="hover:text-[#DB2777] transition duration-300" href="/about-us" >
+                    <NavigationMenuTrigger className="text-[.9rem] text-[#345F80] font-semibold  uppercase" >
+                      intervention areas
+                    </NavigationMenuTrigger>
+
+                  </Link>
+                  <NavigationMenuContent className="border-t-4 border-[#DB2777]">
+                    <ul className="grid text-gray-700 bg-white rounded-xl p-4 md:w-[400px] lg:w-[400px]  z-60">
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Zero Hunger</span>
+                      </ListItem>
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Climate & Environment</span>
+                      </ListItem>
+
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Clean Renewable Energy</span>
+                      </ListItem>
+
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Quality Education</span>
+                      </ListItem>
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Skills Development</span>
+                      </ListItem>
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Quality Healthcare</span>
+                      </ListItem>
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Clean Water & Infrastructure</span>
+                      </ListItem>
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Zero Drugs & Mental Health</span>
+                      </ListItem>
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Women - Children Empowerment & Advocacy</span>
+                      </ListItem>
+
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>{" "}
+              </NavigationMenu>
+            </li>
+            <li>
+              <Link
+                href="/"
+                className="text-[.9rem] text-[#345F80] font-semibold uppercase block py-2 px-3  hover:text-[#DB2777] transition duration-300 dark:text-white"
+              >
+              successful projects
+              </Link>
+            </li>
+            <li>
+              <NavigationMenu>
+                <NavigationMenuItem className="">
+                  <Link className="hover:text-[#DB2777] transition duration-300" href="/about-us" >
+                    <NavigationMenuTrigger className="text-[.9rem] text-[#345F80] font-semibold uppercase " >
+                      Subsidiaries
+                    </NavigationMenuTrigger>
+
+                  </Link>
+                  <NavigationMenuContent className="border-t-4 border-[#DB2777]">
+                    <ul className="grid text-gray-700 bg-white rounded-xl p-4 md:w-[200px] lg:w-[200px]  z-60">
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">STEM Gambia</span>
+                      </ListItem>
+                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">GAM Shelter</span>
                       </ListItem>
                     </ul>
                   </NavigationMenuContent>
@@ -136,44 +195,21 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/focused-area"
-                className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white"
+                href="/"
+                className="text-[.9rem] text-[#345F80] font-semibold uppercase block py-2 px-3 hover:text-[#DB2777] transition duration-300 dark:text-white"
               >
-                Focus Areas
+              Reports
               </Link>
             </li>
             <li>
               <Link
-                href="/our-projects"
-                className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white"
+                href="/"
+                className="text-[.9rem] text-[#345F80] font-semibold uppercase block py-2 px-3 hover:text-[#DB2777] transition duration-300 dark:text-white"
               >
-                Our Projects
+              connect
               </Link>
             </li>
-            <li>
-              <Link
-                href="/FAQS"
-                className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white"
-              >
-                FAQs
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/Gallery"
-                className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white"
-              >
-                Gallery
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact-us"
-                className="block py-2 px-3 text-gray-900 hover:text-[#345F80] transition duration-300 dark:text-white"
-              >
-                Contact Us
-              </Link>
-            </li>
+
           </ul>
         </div>
       </div>
