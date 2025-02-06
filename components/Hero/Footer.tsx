@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Left Section - Logo & Text */}
         <div className="max-w-[1100px] m-auto">
           <Image
-            src="https://newafricafoundation.org/wp-content/uploads/2023/10/new_africa_foundation_footer.png"
+            src="https://anchorforallfoundation.org/wp-content/uploads/2024/07/ANCHOR-LANDSCAPE-2048x819.png"
             alt="New Africa Foundation"
             width={180}
             height={60}
