@@ -93,14 +93,6 @@ const Navbar = () => {
         >
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:mt-0 rtl:space-x-reverse">
             <li>
-              <Link
-                href="/"
-                className="text-[.9rem] -mt-[1.6px] text-[#345F80] font-semibold uppercase block py-2 px-3 hover:text-[#DB2777] transition duration-300 dark:text-white"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
               <NavigationMenu>
                 <NavigationMenuItem className="">
                   <Link className="hover:text-[#DB2777] transition duration-300" href="/" >
@@ -109,36 +101,41 @@ const Navbar = () => {
                     </NavigationMenuTrigger>
                   </Link>
                   <NavigationMenuContent className="border-t-4 border-[#DB2777]">
-                    <ul className="grid text-gray-700 bg-white rounded-xl p-4 md:w-[200px] lg:w-[200px]  z-60">
+                    <ul className="grid text-gray-700 bg-white rounded-xl md:w-[200px] lg:w-[200px]  z-60">
                       <ListItem
                         href="/who-we-are"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] transition border-b hover:bg-gray-200 border-b-gray-200 duration-300"
                       >
                         <span className="text-[.9rem]">Who we are</span>
                       </ListItem>
-                      <ListItem href="/our-leadership" className="hover:text-[#DB2777] transition duration-300">
+                      <ListItem href="/our-leadership" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
                         <span className="text-[.9rem]">Our Leadership</span>
                       </ListItem>
-                      <ListItem href="/our-board-of-directors" className="hover:text-[#DB2777] transition duration-300">
+                      <ListItem href="/our-board-of-directors" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
                         <span className="text-[.9rem]">Our Board of Directors</span>
                       </ListItem>
-                      <ListItem href="/our-offices" className="hover:text-[#DB2777] transition duration-300">
-                        <span className="text-[.9rem]">Our Offices</span>
-                      </ListItem>
-
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">Volunteers</span>
                       </ListItem>
 
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">AFAF Network</span>
                       </ListItem>
+                      <ListItem href="/" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
+                        <span className="text-[.9rem]">Reports</span>
+                      </ListItem>
+
+
+                      <ListItem href="/our-offices" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
+                        <span className="text-[.9rem]">Our Offices</span>
+                      </ListItem>
+
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>{" "}
@@ -148,7 +145,7 @@ const Navbar = () => {
               <NavigationMenu>
                 <NavigationMenuItem className="">
                   <Link
-                    className="hover:text-[#DB2777] transition duration-300"
+                    className="hover:text-[#DB2777]  transition duration-300"
                     href="/about-us"
                   >
                     <NavigationMenuTrigger className="text-[.9rem] text-[#345F80] font-semibold  uppercase">
@@ -159,13 +156,13 @@ const Navbar = () => {
                     <ul className="grid text-gray-700 bg-white rounded-xl p-4 md:w-[400px] lg:w-[400px]  z-60">
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">Zero Hunger</span>
                       </ListItem>
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">
                           Climate & Environment
@@ -174,7 +171,7 @@ const Navbar = () => {
 
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">
                           Clean Renewable Energy
@@ -183,25 +180,25 @@ const Navbar = () => {
 
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">Quality Education</span>
                       </ListItem>
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">Skills Development</span>
                       </ListItem>
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">Quality Healthcare</span>
                       </ListItem>
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">
                           Clean Water & Infrastructure
@@ -209,7 +206,7 @@ const Navbar = () => {
                       </ListItem>
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">
                           Zero Drugs & Mental Health
@@ -217,7 +214,7 @@ const Navbar = () => {
                       </ListItem>
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">
                           Women - Children Empowerment & Advocacy
@@ -251,13 +248,13 @@ const Navbar = () => {
                     <ul className="grid text-gray-700 bg-white rounded-xl p-4 md:w-[200px] lg:w-[200px]  z-60">
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">STEM Gambia</span>
                       </ListItem>
                       <ListItem
                         href="/docs"
-                        className="hover:text-[#DB2777] transition duration-300"
+                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
                       >
                         <span className="text-[.9rem]">GAM Shelter</span>
                       </ListItem>
@@ -265,14 +262,6 @@ const Navbar = () => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>{" "}
               </NavigationMenu>
-            </li>
-            <li>
-              <Link
-                href="/"
-                className="text-[.9rem] text-[#345F80] font-semibold uppercase block py-2 px-3 hover:text-[#DB2777] transition duration-300 dark:text-white"
-              >
-                Reports
-              </Link>
             </li>
             <li>
               <Link

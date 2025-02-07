@@ -6,7 +6,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <div className="p-6 pb-10  border-b-2 border-t-2 pt-20 ">
+      <div className="p-6 pb-10 pl-14  border-b-2 border-t-2 pt-20 ">
         <div className="space-y-8 max-w-4xl">
           <h1 className="font-bold text-6xl max-md:text-4xl tracking-[-0.14rem]">
             LEADERSHIP
