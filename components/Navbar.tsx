@@ -127,7 +127,7 @@ const Navbar = () => {
                       >
                         <span className="text-[.9rem]">AFAF Network</span>
                       </ListItem>
-                      <ListItem href="/" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
+                      <ListItem href="/reports" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
                         <span className="text-[.9rem]">Reports</span>
                       </ListItem>
 
