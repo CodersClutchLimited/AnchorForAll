@@ -11,7 +11,7 @@ import {
   NavigationMenuLink,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { FaIcons, FaUser } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { Search } from "lucide-react";
 
 const Navbar = () => {
@@ -37,18 +37,18 @@ const Navbar = () => {
           </Avatar>
         </Link>
         <div className="flex items-center lg:order-2 space-x-1 lg:space-x-2 rtl:space-x-reverse">
-        <Link
-          href="/"
-          className="p-3 flex items-center justify-center rounded-full bg-[#E92751]"
-        >
-          <Search className="text-white" size={19} />
-        </Link>
-        <Link
-          href="/"
-          className="p-3 flex items-center justify-center rounded-full bg-[#005075]"
-        >
-          <FaUser className="text-white" size={19} />
-        </Link>
+          <Link
+            href="/"
+            className="p-3 flex items-center justify-center rounded-full bg-[#E92751]"
+          >
+            <Search className="text-white" size={19} />
+          </Link>
+          <Link
+            href="/"
+            className="p-3 flex items-center justify-center rounded-full bg-[#005075]"
+          >
+            <FaUser className="text-white" size={19} />
+          </Link>
           <Link
             href="#"
             className="border-2 border-[#345F80] text-[#345F80] font-medium rounded-lg text-sm px-4 py-2 lg:px-5 lg:py-2.5"
@@ -87,8 +87,9 @@ const Navbar = () => {
         </div>
         <div
           id="mega-menu"
-          className={`${menuOpen ? "block" : "hidden"
-            } w-full lg:flex lg:w-auto lg:order-1`}
+          className={`${
+            menuOpen ? "block" : "hidden"
+          } w-full lg:flex lg:w-auto lg:order-1`}
         >
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:mt-0 rtl:space-x-reverse">
             <li>
@@ -106,11 +107,13 @@ const Navbar = () => {
                     <NavigationMenuTrigger className="text-[.9rem] text-[#345F80] font-semibold uppercase" >
                       About Us
                     </NavigationMenuTrigger>
-
                   </Link>
                   <NavigationMenuContent className="border-t-4 border-[#DB2777]">
                     <ul className="grid text-gray-700 bg-white rounded-xl p-4 md:w-[200px] lg:w-[200px]  z-60">
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
                         <span className="text-[.9rem]">Who we are</span>
                       </ListItem>
                       <ListItem href="/our-leadership" className="hover:text-[#DB2777] transition duration-300">
@@ -123,14 +126,19 @@ const Navbar = () => {
                         <span className="text-[.9rem]">Our Leadership</span>
                       </ListItem>
 
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
                         <span className="text-[.9rem]">Volunteers</span>
                       </ListItem>
 
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
                         <span className="text-[.9rem]">AFAF Network</span>
                       </ListItem>
-
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>{" "}
@@ -139,44 +147,82 @@ const Navbar = () => {
             <li>
               <NavigationMenu>
                 <NavigationMenuItem className="">
-                  <Link className="hover:text-[#DB2777] transition duration-300" href="/about-us" >
-                    <NavigationMenuTrigger className="text-[.9rem] text-[#345F80] font-semibold  uppercase" >
+                  <Link
+                    className="hover:text-[#DB2777] transition duration-300"
+                    href="/about-us"
+                  >
+                    <NavigationMenuTrigger className="text-[.9rem] text-[#345F80] font-semibold  uppercase">
                       intervention areas
                     </NavigationMenuTrigger>
-
                   </Link>
                   <NavigationMenuContent className="border-t-4 border-[#DB2777]">
                     <ul className="grid text-gray-700 bg-white rounded-xl p-4 md:w-[400px] lg:w-[400px]  z-60">
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
                         <span className="text-[.9rem]">Zero Hunger</span>
                       </ListItem>
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
-                        <span className="text-[.9rem]">Climate & Environment</span>
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
+                        <span className="text-[.9rem]">
+                          Climate & Environment
+                        </span>
                       </ListItem>
 
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
-                        <span className="text-[.9rem]">Clean Renewable Energy</span>
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
+                        <span className="text-[.9rem]">
+                          Clean Renewable Energy
+                        </span>
                       </ListItem>
 
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
                         <span className="text-[.9rem]">Quality Education</span>
                       </ListItem>
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
                         <span className="text-[.9rem]">Skills Development</span>
                       </ListItem>
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
                         <span className="text-[.9rem]">Quality Healthcare</span>
                       </ListItem>
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
-                        <span className="text-[.9rem]">Clean Water & Infrastructure</span>
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
+                        <span className="text-[.9rem]">
+                          Clean Water & Infrastructure
+                        </span>
                       </ListItem>
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
-                        <span className="text-[.9rem]">Zero Drugs & Mental Health</span>
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
+                        <span className="text-[.9rem]">
+                          Zero Drugs & Mental Health
+                        </span>
                       </ListItem>
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
-                        <span className="text-[.9rem]">Women - Children Empowerment & Advocacy</span>
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
+                        <span className="text-[.9rem]">
+                          Women - Children Empowerment & Advocacy
+                        </span>
                       </ListItem>
-
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>{" "}
@@ -187,24 +233,32 @@ const Navbar = () => {
                 href="/"
                 className="text-[.9rem] text-[#345F80] font-semibold uppercase block py-2 px-3  hover:text-[#DB2777] transition duration-300 dark:text-white"
               >
-              successful projects
+                successful projects
               </Link>
             </li>
             <li>
               <NavigationMenu>
                 <NavigationMenuItem className="">
-                  <Link className="hover:text-[#DB2777] transition duration-300" href="/about-us" >
-                    <NavigationMenuTrigger className="text-[.9rem] text-[#345F80] font-semibold uppercase " >
+                  <Link
+                    className="hover:text-[#DB2777] transition duration-300"
+                    href="/about-us"
+                  >
+                    <NavigationMenuTrigger className="text-[.9rem] text-[#345F80] font-semibold uppercase ">
                       Subsidiaries
                     </NavigationMenuTrigger>
-
                   </Link>
                   <NavigationMenuContent className="border-t-4 border-[#DB2777]">
                     <ul className="grid text-gray-700 bg-white rounded-xl p-4 md:w-[200px] lg:w-[200px]  z-60">
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
                         <span className="text-[.9rem]">STEM Gambia</span>
                       </ListItem>
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
+                      <ListItem
+                        href="/docs"
+                        className="hover:text-[#DB2777] transition duration-300"
+                      >
                         <span className="text-[.9rem]">GAM Shelter</span>
                       </ListItem>
                     </ul>
@@ -217,7 +271,7 @@ const Navbar = () => {
                 href="/"
                 className="text-[.9rem] text-[#345F80] font-semibold uppercase block py-2 px-3 hover:text-[#DB2777] transition duration-300 dark:text-white"
               >
-              Reports
+                Reports
               </Link>
             </li>
             <li>
@@ -225,10 +279,9 @@ const Navbar = () => {
                 href="/"
                 className="text-[.9rem] text-[#345F80] font-semibold uppercase block py-2 px-3 hover:text-[#DB2777] transition duration-300 dark:text-white"
               >
-              connect
+                connect
               </Link>
             </li>
-
           </ul>
         </div>
       </div>
