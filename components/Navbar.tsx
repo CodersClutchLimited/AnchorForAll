@@ -111,7 +111,7 @@ const Navbar = () => {
                   <NavigationMenuContent className="border-t-4 border-[#DB2777]">
                     <ul className="grid text-gray-700 bg-white rounded-xl p-4 md:w-[200px] lg:w-[200px]  z-60">
                       <ListItem
-                        href="/docs"
+                        href="/who-we-are"
                         className="hover:text-[#DB2777] transition duration-300"
                       >
                         <span className="text-[.9rem]">Who we are</span>
@@ -123,7 +123,7 @@ const Navbar = () => {
                         <span className="text-[.9rem]">Our Board of Directors</span>
                       </ListItem>
                       <ListItem href="/our-offices" className="hover:text-[#DB2777] transition duration-300">
-                        <span className="text-[.9rem]">Our Leadership</span>
+                        <span className="text-[.9rem]">Our Offices</span>
                       </ListItem>
 
                       <ListItem
