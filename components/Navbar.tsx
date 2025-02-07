@@ -102,7 +102,7 @@ const Navbar = () => {
             <li>
               <NavigationMenu>
                 <NavigationMenuItem className="">
-                  <Link className="hover:text-[#DB2777] transition duration-300" href="/about-us" >
+                  <Link className="hover:text-[#DB2777] transition duration-300" href="/" >
                     <NavigationMenuTrigger className="text-[.9rem] text-[#345F80] font-semibold uppercase" >
                       About Us
                     </NavigationMenuTrigger>
@@ -113,8 +113,14 @@ const Navbar = () => {
                       <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
                         <span className="text-[.9rem]">Who we are</span>
                       </ListItem>
-                      <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">
-                        <span className="text-[.9rem]">Our Board</span>
+                      <ListItem href="/our-leadership" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Our Leadership</span>
+                      </ListItem>
+                      <ListItem href="/our-board-of-directors" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Our Board of Directors</span>
+                      </ListItem>
+                      <ListItem href="/our-offices" className="hover:text-[#DB2777] transition duration-300">
+                        <span className="text-[.9rem]">Our Leadership</span>
                       </ListItem>
 
                       <ListItem href="/docs" className="hover:text-[#DB2777] transition duration-300">

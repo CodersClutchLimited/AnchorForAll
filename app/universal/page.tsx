@@ -1,4 +1,4 @@
-import { Search, UserRound } from "lucide-react";
+import { Search, } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import { FaUser } from "react-icons/fa";
