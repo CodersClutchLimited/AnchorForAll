@@ -4,7 +4,7 @@ import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 const LittleHero = () => {
     return (
         <div>
-            <div className='py-1 px-5 md:px-[200px] w-full bg-[#DB2777] flex justify-between items-center'>
+            <div className='py-1  px-5 md:px-[200px] w-full bg-[#DB2777] flex justify-between items-center'>
                 <div className="flex space-x-3">
                     <a href="https://twitter.com" className='p-2 hover:bg-blue-950 hover:bg-opacity-70 rounded-full transition duration-500' target="_blank" rel="noopener noreferrer">
                         <Twitter strokeWidth={0} fill="currentColor" className="text-white w-5 h-5" />
