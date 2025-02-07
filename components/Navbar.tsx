@@ -153,7 +153,7 @@ const Navbar = () => {
                     </NavigationMenuTrigger>
                   </Link>
                   <NavigationMenuContent className="border-t-4 border-[#DB2777]">
-                    <ul className="grid text-gray-700 bg-white rounded-xl p-4 md:w-[400px] lg:w-[400px]  z-60">
+                    <ul className="grid text-gray-700 bg-white rounded-xl  md:w-[400px] lg:w-[400px]  z-60">
                       <ListItem
                         href="/docs"
                         className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
@@ -245,7 +245,7 @@ const Navbar = () => {
                     </NavigationMenuTrigger>
                   </Link>
                   <NavigationMenuContent className="border-t-4 border-[#DB2777]">
-                    <ul className="grid text-gray-700 bg-white rounded-xl p-4 md:w-[200px] lg:w-[200px]  z-60">
+                    <ul className="grid text-gray-700 bg-white rounded-xl md:w-[200px] lg:w-[200px]  z-60">
                       <ListItem
                         href="/docs"
                         className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
