@@ -130,6 +130,9 @@ const Navbar = () => {
                       <ListItem href="/reports" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
                         <span className="text-[.9rem]">Reports</span>
                       </ListItem>
+                      <ListItem href="/Gallery" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
+                        <span className="text-[.9rem]">Gallery</span>
+                      </ListItem>
 
 
                       <ListItem href="/our-offices" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
@@ -271,6 +274,15 @@ const Navbar = () => {
                 connect
               </Link>
             </li>
+            <li>
+              <Link
+                href="/news"
+                className="text-[.9rem] text-[#345F80] font-semibold uppercase block py-2 px-3 hover:text-[#DB2777] transition duration-300 dark:text-white"
+              >
+                News
+              </Link>
+            </li>
+
           </ul>
         </div>
       </div>
