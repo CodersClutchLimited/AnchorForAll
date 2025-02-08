@@ -3,16 +3,16 @@ import Link from "next/link";
 import React, { useRef, useState } from "react";
 
 const TabOffice = () => {
-    const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState("");
   const sections = {
-    africa: useRef(null),
-    europe: useRef(null),
-    latinAmerica: useRef(null),
-    middleEast: useRef(null),
-    usa: useRef(null),
+    africa: useRef<HTMLDivElement>(null),
+    europe: useRef<HTMLDivElement>(null),
+    latinAmerica: useRef<HTMLDivElement>(null),
+    middleEast: useRef<HTMLDivElement>(null),
+    usa: useRef<HTMLDivElement>(null),
   };
 
-  const scrollToSection = (section) => {
+  const scrollToSection = (section: keyof typeof sections) => {
     sections[section]?.current?.scrollIntoView({ behavior: "smooth" });
     setActiveSection(section);
   };
@@ -21,38 +21,49 @@ const TabOffice = () => {
     <div className="flex h-screen overflow-hidden">
       {/* Sidebar */}
       <div className="w-2/5 pl-8 p-4 text-gray-600 max-md:hidden font-bold text-2xl bg-white sticky top-0 h-screen overflow-hidden">
-      <ul className="space-y-3">
-      <li
-        className={`cursor-pointer ${activeSection === "africa" ? "text-black" : ""}`}
-        onClick={() => scrollToSection("africa")}
-      >
-        AFRICA
-      </li>
-      <li
-        className={`cursor-pointer ${activeSection === "europe" ? "text-black" : ""}`}
-        onClick={() => scrollToSection("europe")}
-      >
-        EUROPE AND CENTRAL ASIA
-      </li>
-      <li
-        className={`cursor-pointer ${activeSection === "latinAmerica" ? "text-black" : ""}`}
-        onClick={() => scrollToSection("latinAmerica")}
-      >
-        LATIN AMERICA AND THE CARIBBEAN
-      </li>
-      <li
-        className={`cursor-pointer ${activeSection === "middleEast" ? "text-black" : ""}`}
-        onClick={() => scrollToSection("middleEast")}
-      >
-        MIDDLE EAST AND NORTH AFRICA
-      </li>
-      <li
-        className={`cursor-pointer ${activeSection === "usa" ? "text-black" : ""}`}
-        onClick={() => scrollToSection("usa")}
-      >
-        UNITED STATES
-      </li>
-    </ul>      </div>
+        <ul className="space-y-3">
+          <li
+            className={`cursor-pointer ${
+              activeSection === "africa" ? "text-black" : ""
+            }`}
+            onClick={() => scrollToSection("africa")}
+          >
+            AFRICA
+          </li>
+          <li
+            className={`cursor-pointer ${
+              activeSection === "europe" ? "text-black" : ""
+            }`}
+            onClick={() => scrollToSection("europe")}
+          >
+            EUROPE AND CENTRAL ASIA
+          </li>
+          <li
+            className={`cursor-pointer ${
+              activeSection === "latinAmerica" ? "text-black" : ""
+            }`}
+            onClick={() => scrollToSection("latinAmerica")}
+          >
+            LATIN AMERICA AND THE CARIBBEAN
+          </li>
+          <li
+            className={`cursor-pointer ${
+              activeSection === "middleEast" ? "text-black" : ""
+            }`}
+            onClick={() => scrollToSection("middleEast")}
+          >
+            MIDDLE EAST AND NORTH AFRICA
+          </li>
+          <li
+            className={`cursor-pointer ${
+              activeSection === "usa" ? "text-black" : ""
+            }`}
+            onClick={() => scrollToSection("usa")}
+          >
+            UNITED STATES
+          </li>
+        </ul>{" "}
+      </div>
 
       {/* Content Area */}
       <div className="md:w-4/5 h-screen overflow-y-auto text-gray-900 p-8">
@@ -193,8 +204,7 @@ const TabOffice = () => {
           <h2 className="text-3xl font-bold">UNITED STATES</h2>
           <div className="grid md:grid-cols-2 gap-8 mt-6">
             <div className="border-t border-gray-200  pt-4">
-              <p className="text-gray-500">United States
-              </p>
+              <p className="text-gray-500">United States</p>
               <h3 className="text-xl font-bold">New York</h3>
               <p>Open Society Foundations</p>
               <p>224 West 57th Street</p>
@@ -203,8 +213,7 @@ const TabOffice = () => {
               <p>F. +1-212-548-4600</p>
             </div>
             <div className="border-t border-gray-200  pt-4">
-              <p className="text-gray-500">United States
-              </p>
+              <p className="text-gray-500">United States</p>
               <h3 className="text-xl font-bold">Washington D.C.</h3>
               <p>Open Society Foundations</p>
               <p>1730 Pennsylvania Avenue, NW 7th Floor</p>
@@ -214,18 +223,15 @@ const TabOffice = () => {
             </div>
 
             <div className="border-t border-gray-200  pt-4">
-              <p className="text-gray-500">United States
-              </p>
+              <p className="text-gray-500">United States</p>
               <h3 className="text-xl font-bold">Washington D.C.</h3>
               <p>Open Society Action Fund</p>
               <p>1730 Pennsylvania Avenue, NW 7th Floor</p>
-              <p className="pb-4" >Washington, DC 20006, United States</p>
+              <p className="pb-4">Washington, DC 20006, United States</p>
               <Link className=" text-black font-normal border-b  " href="/">
                 Website
               </Link>
-
             </div>
-
           </div>
         </section>
       </div>
