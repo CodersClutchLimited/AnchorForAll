@@ -265,7 +265,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/"
+                href="/connect"
                 className="text-[.9rem] text-[#345F80] font-semibold uppercase block py-2 px-3 hover:text-[#DB2777] transition duration-300 dark:text-white"
               >
                 connect
