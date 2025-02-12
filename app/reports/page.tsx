@@ -1,16 +1,28 @@
-import CustomBarChart from '@/components/Reports/CustomBarChart'
-import ReportsBanner from '@/components/Reports/ReportsBanner'
-import Stats from '@/components/Reports/Stats'
-import React from 'react'
+import fs from "fs/promises";
+import CustomBarChart from '@/components/Reports/CustomBarChart';
+import ReportsBanner from '@/components/Reports/ReportsBanner';
+import Stats from '@/components/Reports/Stats';
+import React from 'react';
+import { List } from '../_components/list';
 
-const pages = () => {
-  return (
-    <div>
-        <ReportsBanner />
-        <Stats/>
-        <CustomBarChart/>
-    </div>
-  )
-}
+const Page = async () => {
+    let files: string[] = [];
 
-export default pages
+    try {
+        files = await fs.readdir("uploads");
+    } catch (error) {
+        console.error(error);
+        await fs.mkdir("uploads", { recursive: true });
+    }
+
+    return (
+        <div>
+            <ReportsBanner />
+            <Stats />
+            <CustomBarChart />
+            <List files={files} /> {/* Pass files as a prop */}
+        </div>
+    );
+};
+
+export default Page;
