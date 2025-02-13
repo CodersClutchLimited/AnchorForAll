@@ -52,7 +52,11 @@ const NewsFilter = () => {
         (year === "all" || item.year === year) &&
         (type === "all" || item.type === type)
     )
-    .sort((a, b) => (sortBy === "date" ? new Date(b.date) - new Date(a.date) : a.title.localeCompare(b.title)));
+    .sort((a, b) =>
+      sortBy === "date"
+        ? new Date(b.date).getTime() - new Date(a.date).getTime()
+        : a.title.localeCompare(b.title)
+    );
 
   return (
     <div className="min-h-screen pt-16">
@@ -61,10 +65,14 @@ const NewsFilter = () => {
         <div className="flex justify-between items-center border-t border-b border-gray-200 pt-6 pb-6 px-4">
           <div className="text-gray-600 text-base flex items-center space-x-6">
             <span className="font-medium">Filter by:</span>
-            
+
             <div className="flex items-center space-x-2">
               <span className="font-medium">Region</span>
-              <select className="text-black border-none aoo border-gray-300  rounded-md" onChange={(e) => setRegion(e.target.value)} value={region}>
+              <select
+                className="text-black border-none aoo border-gray-300  rounded-md"
+                onChange={(e) => setRegion(e.target.value)}
+                value={region}
+              >
                 <option value="all">All</option>
                 <option value="africa">Africa</option>
                 <option value="europe">Europe</option>
@@ -75,7 +83,11 @@ const NewsFilter = () => {
 
             <div className="flex items-center space-x-2">
               <span className="font-medium">Year</span>
-              <select className="text-black border-none border-gray-300 p-2 rounded-md" onChange={(e) => setYear(e.target.value)} value={year}>
+              <select
+                className="text-black border-none border-gray-300 p-2 rounded-md"
+                onChange={(e) => setYear(e.target.value)}
+                value={year}
+              >
                 <option value="all">All</option>
                 <option value="2018">2018</option>
               </select>
@@ -83,7 +95,11 @@ const NewsFilter = () => {
 
             <div className="flex items-center space-x-2">
               <span className="font-medium">Type</span>
-              <select className="text-black border-none border-gray-300 rounded-md" onChange={(e) => setType(e.target.value)} value={type}>
+              <select
+                className="text-black border-none border-gray-300 rounded-md"
+                onChange={(e) => setType(e.target.value)}
+                value={type}
+              >
                 <option value="all">All</option>
                 <option value="press-release">Press Release</option>
                 <option value="announcement">Announcement</option>
@@ -94,7 +110,11 @@ const NewsFilter = () => {
 
           <div className="flex items-center space-x-3 text-gray-600 text-base">
             <span className="font-medium">Sort by:</span>
-            <select className="text-black border-none border-gray-300 p-2 rounded-md" onChange={(e) => setSortBy(e.target.value)} value={sortBy}>
+            <select
+              className="text-black border-none border-gray-300 p-2 rounded-md"
+              onChange={(e) => setSortBy(e.target.value)}
+              value={sortBy}
+            >
               <option value="date">Date</option>
               <option value="title">Title</option>
             </select>
@@ -105,25 +125,38 @@ const NewsFilter = () => {
         <div className="flex items-center bg-gray-100 justify-center border-b border-gray-200 pb-4 pt-4">
           <span className="font-medium">{filteredNews.length} News Items</span>
         </div>
-        
+
         {/* News List */}
         <div className="bg-white">
           <div className="space-y-6">
             {filteredNews.length > 0 ? (
               filteredNews.map((item, index) => (
-                <div key={index} className="border-b border-gray-200 pt-8 pb-8 flex flex-row justify-between px-4">
+                <div
+                  key={index}
+                  className="border-b border-gray-200 pt-8 pb-8 flex flex-row justify-between px-4"
+                >
                   <div className="space-y-1">
-                    <p className="font-semibold uppercase">{item.type.replace('-', ' ')}</p>
-                    <div className="text-sm text-gray-500 mb-2">{item.date}</div>
+                    <p className="font-semibold uppercase">
+                      {item.type.replace("-", " ")}
+                    </p>
+                    <div className="text-sm text-gray-500 mb-2">
+                      {item.date}
+                    </div>
                   </div>
-                  <div className="text-lg text-start font-semibold text-black cursor-pointer">{item.title}</div>
+                  <div className="text-lg text-start font-semibold text-black cursor-pointer">
+                    {item.title}
+                  </div>
                   <p className="font-normal text-black max-w-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptatibus et repellat saepe soluta nisi reprehenderit commodi ullam.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Deserunt voluptatibus et repellat saepe soluta nisi
+                    reprehenderit commodi ullam.
                   </p>
                 </div>
               ))
             ) : (
-              <div className="text-center text-gray-500 py-6">No news found.</div>
+              <div className="text-center text-gray-500 py-6">
+                No news found.
+              </div>
             )}
           </div>
         </div>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Circle = () => {
     return (
-        <div className="bg-white text-center py-12 mt-[80px]">
+        <div className="bg-white text-center py-12 mt-[10%]">
             <div className="">
                 <div className="bg-[#367978] text-white font-semibold py-3 px-10 inline-block rounded-md mb-6">
                     2024: FOCUS AREAS
