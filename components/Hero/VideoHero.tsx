@@ -12,7 +12,7 @@ import { AlertDialogOverlay } from "@radix-ui/react-alert-dialog";
 
 const VideoHero = () => {
   return (
-    <div className="relative w-full h-[95vh] overflow-hidden mb-10">
+    <div className="relative w-full h-[65vh] overflow-hidden mb-10">
     <video
       className="absolute top-0 left-0 w-full h-full object-cover"
       src="/empower.mp4"
@@ -21,7 +21,7 @@ const VideoHero = () => {
       muted
     />
     <div className="absolute pl-10 md:pl-[150px] inset-0 flex justify-center flex-col bg-black bg-opacity-50 space-y-6">
-      <h1 className="text-white  text-3xl md:text-6xl font-bold">
+      <h1 className="text-white  text-3xl md:text-7xl font-bold">
         Empowering <span className="text-[#17E1B0]">Nations.</span> <br />{" "}
         Changing <span className="text-[#17E1B0]">Lives.</span>
       </h1>
