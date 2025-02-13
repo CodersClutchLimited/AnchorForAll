@@ -31,12 +31,12 @@ const CustomBarChart = () => {
           2020 Expenditures by Region
         </h2>
         <div className="flex flex-row">
-          <button className="py-2 px-3 border border-gray-300">2020</button>
-          <button className="py-2 px-3 border border-gray-300">2021</button>
-          <button className="py-2 px-3 border border-gray-300">2022</button>
-          <button className="py-2 px-3 border border-gray-300">2023</button>
-          <button className="py-2 px-3 border border-gray-300">2024</button>
-          <button className="py-2 px-3 border border-gray-300">2025</button>
+          <button className="py-2 px-3 border border-gray-300 hover:bg-[#345F80] hover:text-white transition-all duration-500 ease-in-out">2020</button>
+          <button className="py-2 px-3 border border-gray-300 hover:bg-[#345F80] hover:text-white transition-all duration-500 ease-in-out">2021</button>
+          <button className="py-2 px-3 border border-gray-300 hover:bg-[#345F80] hover:text-white transition-all duration-500 ease-in-out">2022</button>
+          <button className="py-2 px-3 border border-gray-300 hover:bg-[#345F80] hover:text-white transition-all duration-500 ease-in-out">2023</button>
+          <button className="py-2 px-3 border border-gray-300 hover:bg-[#345F80] hover:text-white transition-all duration-500 ease-in-out">2024</button>
+          <button className="py-2 px-3 border border-gray-300 hover:bg-[#345F80] hover:text-white transition-all duration-500 ease-in-out">2025</button>
         </div>
       </div>
       <div className="mt-5 flex ">
