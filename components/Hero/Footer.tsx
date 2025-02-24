@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaTwitter, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import Subscribe from "../Footer/Subscribe";
 
 const Footer = () => {
   return (
@@ -14,6 +15,7 @@ const Footer = () => {
             width={180}
             height={60}
           />
+          <Subscribe />
           <div className="md:flex border-t mt-6 border-white/30 border-b gap-6  pb-16 pt-8">
             <p className="mt-8 leading-relaxed max-md:pb-4 ">
               The New Africa Foundation is an entity focused on addressing

@@ -36,7 +36,7 @@ const DoubleSect = () => {
                 component&apos;s aesthetic.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-3">
+            <AccordionItem value="item-4">
               <AccordionTrigger>
               National</AccordionTrigger>
               <AccordionContent>
@@ -44,14 +44,14 @@ const DoubleSect = () => {
                 prefer.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-3">
+            <AccordionItem value="item-5">
               <AccordionTrigger>Global</AccordionTrigger>
               <AccordionContent>
                 Yes. It&apos;s animated by default, but you can disable it if you
                 prefer.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-3">
+            <AccordionItem value="item-6">
               <AccordionTrigger>Education</AccordionTrigger>
               <AccordionContent>
                 Yes. It&apos;s animated by default, but you can disable it if you

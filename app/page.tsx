@@ -13,6 +13,7 @@ import Accord from "@/components/Hero/Accords";
 import Gallery from "@/components/Hero/Gallery";
 import { Testimonials } from "@/components/Hero/Testimonial";
 import Formfill from "@/components/Hero/Formfill";
+import Subscribe from "@/components/Footer/Subscribe";
 
 const Home = () => {
   return (
@@ -49,7 +50,6 @@ const Home = () => {
         </Link>
       </div>
       <Accord />
-
       <div className="mt-[100] mb-[100] space-y-3 max-w-5xl m-auto">
         <h1 className="scroll-m-20 max-mdtext-2xl text-3xl font-bold tracking-tight lg:text-5xl">
           What Our Beneficiaries are saying
