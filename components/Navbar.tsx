@@ -87,9 +87,8 @@ const Navbar = () => {
         </div>
         <div
           id="mega-menu"
-          className={`${
-            menuOpen ? "block" : "hidden"
-          } w-full lg:flex lg:w-auto lg:order-1`}
+          className={`${menuOpen ? "block" : "hidden"
+            } w-full lg:flex lg:w-auto lg:order-1`}
         >
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:mt-0 rtl:space-x-reverse">
             <li>
@@ -97,7 +96,7 @@ const Navbar = () => {
                 <NavigationMenuItem className="">
                   <Link className="hover:text-[#DB2777] transition duration-300" href="/" >
                     <NavigationMenuTrigger className="text-[.9rem] text-[#345F80] font-semibold uppercase" >
-                      About Us
+                      Who We Are
                     </NavigationMenuTrigger>
                   </Link>
                   <NavigationMenuContent className="border-t-4 border-[#DB2777]">
@@ -106,7 +105,7 @@ const Navbar = () => {
                         href="/who-we-are"
                         className="hover:text-[#DB2777] transition border-b hover:bg-gray-200 border-b-gray-200 duration-300"
                       >
-                        <span className="text-[.9rem]">Who we are</span>
+                        <span className="text-[.9rem]">About Us</span>
                       </ListItem>
                       <ListItem href="/our-leadership" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
                         <span className="text-[.9rem]">Our Leadership</span>
@@ -114,13 +113,6 @@ const Navbar = () => {
                       <ListItem href="/our-board-of-directors" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
                         <span className="text-[.9rem]">Our Board of Directors</span>
                       </ListItem>
-                      <ListItem
-                        href="/docs"
-                        className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
-                      >
-                        <span className="text-[.9rem]">Volunteers</span>
-                      </ListItem>
-
                       <ListItem
                         href="/docs"
                         className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300"
@@ -133,11 +125,13 @@ const Navbar = () => {
                       <ListItem href="/Gallery" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
                         <span className="text-[.9rem]">Gallery</span>
                       </ListItem>
-
-
-                      <ListItem href="/our-offices" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
-                        <span className="text-[.9rem]">Our Offices</span>
+                      <ListItem href="/news" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
+                        <span className="text-[.9rem]">Insights</span>
                       </ListItem>
+
+                      {/* <ListItem href="/our-offices" className="hover:text-[#DB2777] border-b hover:bg-gray-200 border-b-gray-200 transition duration-300">
+                        <span className="text-[.9rem]">Our Offices</span>
+                      </ListItem> */}
 
                     </ul>
                   </NavigationMenuContent>
@@ -274,15 +268,6 @@ const Navbar = () => {
                 connect
               </Link>
             </li>
-            <li>
-              <Link
-                href="/news"
-                className="text-[.9rem] text-[#345F80] font-semibold uppercase block py-2 px-3 hover:text-[#DB2777] transition duration-300 dark:text-white"
-              >
-                News
-              </Link>
-            </li>
-
           </ul>
         </div>
       </div>
